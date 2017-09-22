@@ -3,6 +3,8 @@ A simple PHP Trait to make Doctrine MongoDB ODM Documents serializable to Array 
 
 This code is based/forked on this [gist](https://gist.github.com/ajaxray/94b27439ba9c3840d420)
 
+This trait assumes that there are methods of accessing attributes Getters and Setters;
+
 Some methods have been adjusted and some errors corrected.
 I'll implement a few more things.
 
