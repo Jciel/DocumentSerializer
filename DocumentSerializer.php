@@ -64,7 +64,7 @@ trait DocumentSerializer
         } elseif (in_array(__TRAIT__, class_uses(get_class($value)))) {
 //            If the object uses this trait
             return $value->toStdClass();
-        } elseif (is_a($value, 'Doctrine\ODM\MongoDB\PersistentCollection')) {Core\TraitsCore\Traits
+        } elseif (is_a($value, 'Doctrine\ODM\MongoDB\PersistentCollection')) {
 //            If it's a collection, format each value
             return array_map(function ($v) {
                 $this->formatValue($v);
